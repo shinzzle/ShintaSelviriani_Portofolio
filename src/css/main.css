@@ -1,0 +1,20 @@
+/* ==================================================== */
+/* MAIN MODULAR STYLESHEET                              */
+/* Imports all modular CSS sections                     */
+/* ==================================================== */
+
+@import url("./00-variables.css");
+@import url("./01-navbar.css");
+@import url("./02-hero.css");
+@import url("./03-common.css");
+@import url("./04-education.css");
+@import url("./05-experience.css");
+@import url("./06-gallery.css");
+@import url("./07-lightbox.css");
+@import url("./08-tax-journey.css");
+@import url("./09-skills.css");
+@import url("./10-certificates.css");
+@import url("./11-achievements.css");
+@import url("./12-contact.css");
+@import url("./13-responsive.css");
+@import url("./14-animations.css");

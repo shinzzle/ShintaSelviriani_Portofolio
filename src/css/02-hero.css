@@ -1,0 +1,255 @@
+/* HERO SECTION */
+.hero {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  grid-template-columns: 1.04fr .96fr;
+  align-items: center;
+  gap: 50px;
+  padding-top: 42px;
+  padding-bottom: 70px
+}
+
+.eyebrow,
+.section-label {
+  font-size: 10px;
+  letter-spacing: .19em;
+  font-weight: 700;
+  color: var(--green2)
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin-right: 8px
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(70px, 9vw, 126px);
+  line-height: .85;
+  letter-spacing: -.055em;
+  color: var(--green);
+  margin: 28px 0
+}
+
+h1 em,
+h2 em {
+  font-style: italic;
+  font-weight: 500;
+  color: #6f857a
+}
+
+.hero-lead {
+  max-width: 500px;
+  font-size: 17px;
+  color: #617069;
+  line-height: 1.8
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin: 30px 0 48px
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all .25s ease
+}
+
+.button.primary {
+  background: var(--green);
+  color: white
+}
+
+.button.primary:hover {
+  background: var(--green2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(23, 60, 50, .2)
+}
+
+.button.secondary {
+  border: 1px solid #cdd1ca;
+  color: var(--green)
+}
+
+.button.secondary:hover {
+  border-color: var(--green);
+  background: rgba(23, 60, 50, .04)
+}
+
+.hero-meta {
+  display: flex;
+  gap: 45px;
+  border-top: 1px solid var(--line);
+  padding-top: 22px
+}
+
+.hero-meta div {
+  display: flex;
+  flex-direction: column
+}
+
+.hero-meta strong {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  color: var(--green)
+}
+
+.hero-meta span {
+  font-size: 9px;
+  letter-spacing: .12em;
+  color: #8a958f;
+  text-transform: uppercase
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.photo-card {
+  width: min(420px, 78%);
+  background: #e4e6dc;
+  padding: 12px 12px 0;
+  transform: rotate(2.5deg);
+  box-shadow: 0 28px 65px rgba(29, 41, 37, .13);
+  transition: transform .4s ease
+}
+
+.photo-card:hover {
+  transform: rotate(0deg) scale(1.02)
+}
+
+.photo-placeholder {
+  aspect-ratio: 4/5;
+  background: linear-gradient(145deg, #d5ded4, #e9e7dd);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  border: 1px solid rgba(23, 60, 50, .12);
+  overflow: hidden
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.photo-placeholder span {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: .85;
+  text-align: center;
+  font-style: italic
+}
+
+.photo-placeholder small {
+  font-size: 8px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-top: 18px;
+  opacity: .55
+}
+
+.photo-caption {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  color: #607067;
+  font-size: 10px
+}
+
+.photo-caption span:last-child {
+  color: #9a8d6f
+}
+
+.floating-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(251, 250, 246, .94);
+  border: 1px solid rgba(216, 216, 206, .8);
+  box-shadow: 0 15px 35px rgba(29, 41, 37, .09);
+  padding: 13px 16px;
+  border-radius: 12px;
+  min-width: 145px;
+  backdrop-filter: blur(10px)
+}
+
+.floating-card b {
+  font-size: 11px;
+  color: var(--green)
+}
+
+.floating-card small {
+  display: block;
+  font-size: 9px;
+  color: #87928d
+}
+
+.mini-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--green);
+  color: white
+}
+
+.card-top {
+  top: 17%;
+  right: 0
+}
+
+.card-bottom {
+  bottom: 18%;
+  left: 0
+}
+
+.number {
+  font-family: "Playfair Display", serif;
+  color: var(--gold);
+  font-size: 21px
+}
+
+.seal {
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #b8a982;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #927c4d;
+  font: 700 12px/1 "Playfair Display", serif;
+  transform: rotate(-10deg)
+}
+
+.seal span {
+  font: 8px "DM Sans", sans-serif;
+  letter-spacing: .12em
+}
+

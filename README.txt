@@ -2,11 +2,52 @@
 
 Website CV & Portofolio interaktif dan responsif dengan tema elegan (cream, dark green, dan gold).
 
-## Struktur File
-- `index.html` — Struktur utama website, section profil, pengalaman, galeri running slide, riset perpajakan, sertifikat, dan kontak.
-- `style.css` — Desain, warna, tipografi, animasi running slide (marquee), kartu sertifikat, dan efek modal lightbox.
-- `script.js` — Logika interaktif (scroll reveal, kontrol jeda/putar slide, navigasi prev/next, copy email, dan preview foto popup).
-- `images/` — Folder tempat menyimpan file foto pendukung, sertifikat, & profil Anda.
+## Struktur File & Modularisasi (Mudah di-Maintenance)
+
+Proyek ini telah dipecah menjadi modul-modul kecil agar sangat mudah dirawat:
+- `src/index.html` — Template utama yang memuat potongan section via `<!-- @include "sections/..." -->`.
+- `src/sections/` — Potongan tiap bagian halaman HTML:
+  - `navbar.html` — Menu navigasi atas
+  - `hero.html` — Bagian pembuka profil & foto utama
+  - `about.html` — Tentang diri & filosofi karir
+  - `education.html` — Riwayat pendidikan
+  - `experience.html` — Pengalaman organisasi & profesional
+  - `gallery.html` — Running slide / marquee foto kegiatan
+  - `tax-journey.html` — Publikasi riset & proyek akademik perpajakan
+  - `skills.html` — Keahlian teknis & soft skills
+  - `certificates.html` — Grid sertifikat & lisensi
+  - `achievements.html` — Prestasi & foto rekognisi
+  - `contact.html` — Bagian kontak & footer
+  - `lightbox.html` — Modal popup zoom foto
+- `src/css/` — Potongan style CSS per section:
+  - `00-variables.css`, `01-navbar.css`, `02-hero.css`, `03-common.css`, `04-education.css`, `05-experience.css`, `06-gallery.css`, `07-lightbox.css`, `08-tax-journey.css`, `09-skills.css`, `10-certificates.css`, `11-achievements.css`, `12-contact.css`, `13-responsive.css`, `14-animations.css`.
+  - `main.css` — Mengimpor seluruh modul CSS via `@import`.
+- `build.js` — Compiler ringan (tanpa dependensi eksternal) untuk menyatukan `src/` ke `index.html` dan `style.css`.
+- `index.html` & `style.css` — File hasil build siap pakai (bisa langsung dibuka di browser tanpa server).
+- `script.js` — Logika interaktif (scroll reveal, kontrol slide, popup lightbox, copy email).
+- `images/` — Folder aset foto, sertifikat, dan ilustrasi.
+
+---
+
+## Cara Maintenance & Pengembangan
+1. **Mode Otomatis (Watch Mode):**
+   Jalankan perintah ini di terminal:
+   ```bash
+   npm run dev
+   ```
+   Setiap kali Anda mengedit file di dalam `src/sections/*.html` atau `src/css/*.css`, file `index.html` dan `style.css` utama akan langsung otomatis ter-update dalam hitungan milidetik!
+
+2. **Build Sekali (Single Build):**
+   ```bash
+   npm run build
+   ```
+   atau:
+   ```bash
+   node build.js
+   ```
+
+3. **Membuka Website:**
+   Cukup klik dua kali `index.html` seperti biasa, atau gunakan Live Server di VS Code / Antigravity IDE.
 
 ---
 

@@ -1,0 +1,226 @@
+/* RESPONSIVENESS */
+@media(max-width:900px) {
+  .nav-links {
+    display: none
+  }
+
+  .hero {
+    grid-template-columns: 1fr
+  }
+
+  .hero-visual {
+    min-height: 520px
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    gap: 35px
+  }
+
+  .education-grid,
+  .timeline,
+  .skills-layout {
+    grid-template-columns: 1fr
+  }
+
+  .tax-paper-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .tax-paper-spotlight {
+    padding: 34px 28px;
+  }
+
+  .tax-secondary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-panel-full {
+    grid-column: auto
+  }
+
+  .slide-card {
+    width: 290px
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr
+  }
+
+  .contact-footer-wrap {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center
+  }
+}
+
+@media(max-width:768px) {
+  .lightbox-content {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+    overflow-y: auto
+  }
+
+  .lightbox-img-wrap {
+    min-height: 220px;
+    max-height: 280px
+  }
+
+  .lightbox-info {
+    padding: 24px 20px
+  }
+}
+
+@media(max-width:600px) {
+  .container {
+    width: min(100% - 30px, 1160px)
+  }
+
+  .nav {
+    height: 65px
+  }
+
+  .nav-cta {
+    display: none
+  }
+
+  .hero {
+    padding-top: 55px
+  }
+
+  .hero h1 {
+    font-size: 76px
+  }
+
+  .hero-meta {
+    gap: 20px
+  }
+
+  .hero-meta strong {
+    font-size: 20px
+  }
+
+  .hero-visual {
+    min-height: 440px
+  }
+
+  .photo-card {
+    width: 78%
+  }
+
+  .card-top {
+    right: -2%;
+    top: 11%
+  }
+
+  .card-bottom {
+    left: -2%;
+    bottom: 13%
+  }
+
+  .seal {
+    right: 0
+  }
+
+  .section {
+    padding: 75px 0
+  }
+
+  .section-head {
+    display: block
+  }
+
+  .section-head p {
+    margin-top: 18px
+  }
+
+  .tax-paper-spotlight {
+    padding: 26px 18px;
+    border-radius: 18px;
+  }
+
+  .tax-paper-title {
+    font-size: 23px;
+  }
+
+  .tax-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .tax-method-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .tax-paper-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tax-btn-primary,
+  .tax-btn-secondary {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tax-sub-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 78px 1fr
+  }
+
+  .contact-section {
+    padding: 85px 0 35px
+  }
+
+  .contact-title {
+    font-size: 46px
+  }
+
+  .slide-card {
+    width: 270px
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr
+  }
+
+  .exp-gallery {
+    gap: 8px
+  }
+
+  .exp-photo-card {
+    width: 95px;
+    height: 70px
+  }
+
+  .gallery-header-controls {
+    margin-top: 18px
+  }
+
+  .contact-card {
+    padding: 22px 20px
+  }
+
+  .quick-copy-bar {
+    border-radius: 16px;
+    padding: 14px 18px;
+    gap: 10px
+  }
+}
+
